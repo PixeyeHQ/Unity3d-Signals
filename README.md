@@ -38,7 +38,7 @@ public class ExampleClassReciever : MonoBehaviour, IReceive<SignalExampleDamage>
         // This method will work when the signal is received.
         public void HandleSignal(SignalExampleDamage arg)
         {
-            Debug.Log(arg.go + " deal "+ arg.damage + " damage!");
+            Debug.Log(string.Format({0} deals {1} damage!, arg.go, arg.damage));
         }
     }
 ```
